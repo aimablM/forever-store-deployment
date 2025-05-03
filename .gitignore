@@ -1,0 +1,13 @@
+/admin/node_modules
+/admin/dist
+/admin/.env
+/admin/.env.local
+
+/backend/node_modules
+/backend/dist
+/backend/.env
+
+/frontend/node_modules
+/frontend/.env
+
+/mongo_backup

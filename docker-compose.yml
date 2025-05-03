@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_BACKEND_URL: https://api.forever.aimablem.dev
+    ports:
+      - "3100:80"
+    depends_on:
+      - backend
+    networks:
+      - appnet
+
+  backend:
+    build: ./backend
+    ports:
+      - "4100:4000"
+    depends_on:
+      - mongodb
+    environment:
+      - JWT_SECRET=
+      - ADMIN_EMAIL=
+      - ADMIN_PASSWORD=
+      - MONGODB_URI=
+      - CLOUDINARY_API_KEY=
+      - CLOUDINARY_SECRET_KEY=
+      - CLOUDINARY_NAME=
+      - STRIPE_SECRET_KEY=
+    networks:
+      - appnet
+
+  mongodb:
+    image: mongo:latest
+    restart: always
+    volumes:
+      - forever_mongo_data:/data/db
+    networks:
+      - appnet
+
+volumes:
+  forever_mongo_data:
+
+networks:
+  appnet:
+    driver: bridge

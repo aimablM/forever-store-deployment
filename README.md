@@ -1,3 +1,5 @@
+![Landing Page](img/amlogo.svg)
+
 # Forever Store - Full Stack E-Commerce Platform
 
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&logo=open-source-initiative&logoColor=white)
@@ -5,6 +7,10 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+![Landing Page](img/landing_page.png)
+
+![Collections](img/collections.png)
 
 A containerized, cloud-deployed e-commerce application showcasing modern DevOps practices with Docker, AWS, and automated infrastructure. This project demonstrates the full lifecycle of forking an open-source application, containerizing its components, and deploying to production with proper cloud engineering practices.
 

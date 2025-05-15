@@ -1,4 +1,6 @@
-![Landing Page](img/amlogo.svg)
+<p align="center">
+  <img src="img/amlogo.svg" alt="My Logo" width="100" height="100">
+</p>
 
 # Forever Store - Full Stack E-Commerce Platform
 

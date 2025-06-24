@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
             <img src={assets.logo} className='mb-5 w-32' alt="" />
             <p className='w-full md:w-2/3 text-gray-600'>
-            Inspired by Ashley L😉✨ You sparked this one — can’t wait to help you launch yours for real someday. Pretty sure I like you Ashleyyyyyyyy!
+            Inspired by Ashley L 😉✨ You sparked this one — can’t wait to help you launch yours for real someday!
             </p>
             <p>
               This is a demo deployment of a full-stack MERN (MongoDB, Express.js, React, Node.js) e-commerce application, built and hosted using AWS services with complete CI/CD automation and DevOps practices. The project simulates a modern clothing store with features like dynamic product browsing, add-to-cart functionality, account management, and mock checkout processing. This deployment reflects real-world cloud hosting workflows using infrastructure best practices.

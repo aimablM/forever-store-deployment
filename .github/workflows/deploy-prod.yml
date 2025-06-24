@@ -47,8 +47,16 @@ jobs:
 
       - name: Test Frontend Is Live
         run: |
-          curl --fail --silent --show-error https://forever.aimablem.dev || exit 1
-
+          for i in {1..10}; do
+            echo "Checking backend (try $i)..."
+            if curl --fail --silent --show-error https://forever.aimablem.dev; then
+              echo "Frontend is up!"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Frontend failed to respond after 10 attempts."
+          exit 1
       - name: Test Backend Is Live
         run: |
           for i in {1..10}; do

@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
             <img src={assets.logo} className='mb-5 w-32' alt="" />
             <p className='w-full md:w-2/3 text-gray-600'>
-            Inspired by the one and only Ashley L 😉✨ You sparked this one — can’t wait to help you launch yours for real someday!
+            Inspired by Ashley L ❤️😉✨ You sparked this one — can’t wait to help you launch yours for real someday!
             </p>
             <p>
               -

@@ -1,0 +1,40 @@
+
+# 1. Build stage
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Accept env var from build args
+ENV VITE_BACKEND_URL=https://api.forever.aimablem.dev
+
+# Install dependencies first (optimized layer caching)
+COPY package.json package-lock.json* pnpm-lock.yaml* yarn.lock* ./
+RUN npm install
+
+# Copy all source files
+COPY . .
+
+# Build the app
+RUN npm run build
+
+# 2. Production stage
+
+FROM nginx:stable-alpine
+
+# Set working directory
+WORKDIR /usr/share/nginx/html
+
+# Remove default nginx static assets
+RUN rm -rf ./*
+
+# Copy built assets from builder stage
+COPY --from=builder /app/dist .
+
+# Copy custom nginx config if needed (optional)
+# COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expose port 80
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

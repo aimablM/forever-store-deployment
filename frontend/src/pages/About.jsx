@@ -14,9 +14,9 @@ const About = () => {
       <div className='my-10 flex flex-col md:flex-row gap-16'>
           <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="" />
           <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
-              <p>Forever was born out of a passion for innovation and a desire to reimagine how people shop online. What started as a simple demo project quickly became something more personal — sparked by an idea with a friend — Ashley 😉 — who once trusted me to help with her own clothing brand idea. That small, unexpected exchange stuck with me. It inspired the thought: what if I could bring a real-world vision like that to life through code?
+              <p>Forever was born out of a passion for innovation and a desire to reimagine how people shop online. What started as a simple demo project quickly became something more personal, sparked by a friend's idea, Ashley 😉, who once trusted me to help with her own clothing brand. That small, pleasant unexpected exchange stuck with me. It inspired the thought: what if I could bring a real-world vision like that to life through code?
 </p>
-              <p>And so, this project was born — a demo store built around a real-world idea, rooted in something that could easily become reality. It reminded me that beautiful, functional things often start from the smallest sparks — moments that seem casual at first, but carry the potential to grow into something lasting.</p>
+              <p>And so, this project was born. A demo store built around a real-world idea, rooted in something that could easily become reality. It reminded me that beautiful, functional things often start from the smallest sparks — moments that seem casual at first, but carry the potential to grow into something lasting.</p>
               <b className='text-gray-800'>Our Mission</b>
               <p>Our mission at Forever is to empower customers with choice, convenience, and confidence. We're dedicated to providing a seamless shopping experience that exceeds expectations, from browsing and ordering to delivery and beyond.</p>
           </div>
